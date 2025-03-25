@@ -208,3 +208,112 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+
+/* Animasi Input Field */
+.form-container input {
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    margin: 8px 0;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.form-container input:focus {
+    border-color: #520a18;
+}
+
+/* Label animasi */
+.form-container input::placeholder {
+    color: transparent;
+}
+
+.form-container input:focus::placeholder {
+    color: #aaa;
+}
+
+.form-container span {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #999;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.form-container input:focus + span,
+.form-container input:not(:placeholder-shown) + span {
+    top: 8px;
+    left: 10px;
+    font-size: 12px;
+    color: #520a18;
+    background: white;
+    padding: 0 5px;
+    border-radius: 4px;
+}
+.remember-forgot {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.remember-me input {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #520a18;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+}
+
+.remember-me input:checked {
+    background-color: #520a18;
+    border-color: #520a18;
+}
+
+.remember-me input:checked::after {
+    content: "✔";
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.remember-forgot a {
+    align-self: flex-end; /* Biar "Forgot Your Password?" ke kanan */
+    color: #520a18;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    margin-top: 5px; /* Kasih jarak dari Remember Me */
+}
+
+.remember-forgot a:hover {
+    color: #333;
+}

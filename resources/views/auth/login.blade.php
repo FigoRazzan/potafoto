@@ -12,32 +12,72 @@
 <body>
 
     <div class="container" id="container">
+        <!-- SIGN UP FORM -->
         <div class="form-container sign-up">
             <form>
                 <h1>Create Account</h1>
+
+                <div style="position: relative;">
+                    <input type="text" placeholder=" " required>
+                    <span>Username</span>
+                </div>
+
+                <div style="position: relative;">
+                    <input type="email" placeholder=" " required>
+                    <span>Email</span>
+                </div>
+
+                <div style="position: relative;">
+                    <input type="password" placeholder=" " required>
+                    <span>Password</span>
+                    <i class="fa fa-eye toggle-password" 
+                       style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;">
+                    </i>
+                </div>
+
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
                 </div>
-                <span>or use your email for registration</span>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+
                 <button>Sign Up</button>
             </form>
         </div>
+
+        <!-- SIGN IN FORM -->
         <div class="form-container sign-in">
             <form>
                 <h1>Sign In</h1>
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
                 </div>
-                <span>or use your email password</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <a href="#">Forgot Your Password?</a>
+
+                <div style="position: relative;">
+                    <input type="text" placeholder=" " required>
+                    <span>Username or Email</span>
+                </div>
+
+                <div style="position: relative;">
+                    <input type="password" placeholder=" " required>
+                    <span>Password</span>
+                    <i class="fa fa-eye toggle-password" 
+                       style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;">
+                    </i>
+                </div>
+
+                <div class="remember-forgot">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <a href="#">Forgot Your Password?</a>
+                </div>
+                
+
                 <button>Sign In</button>
             </form>
         </div>
+
+        <!-- TOGGLE CONTAINER -->
         <div class="toggle-container">
             <div class="toggle">
                 <div class="toggle-panel toggle-left">
