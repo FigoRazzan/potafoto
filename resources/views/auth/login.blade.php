@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Modern Login Page | AsmrProg</title>
+    <title>Potafoto</title>
 </head>
 
 <body>
@@ -16,6 +16,10 @@
         <div class="form-container sign-up">
             <form>
                 <h1>Create Account</h1>
+
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                </div>
 
                 <div style="position: relative;">
                     <input type="text" placeholder=" " required>
@@ -33,10 +37,6 @@
                     <i class="fa fa-eye toggle-password" 
                        style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;">
                     </i>
-                </div>
-
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
                 </div>
 
                 <button>Sign Up</button>
