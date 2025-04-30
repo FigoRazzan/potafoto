@@ -21,6 +21,8 @@
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
                 </div>
 
+                <p style="text-align: center; margin: 5px 0;">or use your email password</p>
+
                 <div style="position: relative;">
                     <input type="text" placeholder=" " required>
                     <span>Username</span>
@@ -50,6 +52,8 @@
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
                 </div>
+
+                <p style="text-align: center; margin: 1px 0;">or use your email password</p>
 
                 <div style="position: relative;">
                     <input type="text" placeholder=" " required>

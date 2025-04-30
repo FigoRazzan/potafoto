@@ -217,10 +217,11 @@ body{
     padding: 15px 30px;
     font-size: 16px;
     border-radius: 8px;
-    width: 100%;
+    width: 100%; /* Set the input fields to take the full width of the container */
     outline: none;
     transition: all 0.3s ease;
     position: relative;
+    padding-left: 20px; /* Adjusted padding to move the blinking cursor further to the left */
 }
 
 .form-container input:focus {
@@ -283,11 +284,11 @@ body{
     cursor: pointer;
     outline: none;
     transition: all 0.3s ease;
-    transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
 }
 
 .remember-me input:checked {
